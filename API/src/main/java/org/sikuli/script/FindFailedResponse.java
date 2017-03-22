@@ -9,9 +9,9 @@ package org.sikuli.script;
  * INTERNAL USE
  */
 public enum FindFailedResponse{
-   ABORT,
-   PROMPT,
-   SKIP,
-   RETRY,
-   HANDLE
+    ABORT,
+    PROMPT,
+    SKIP,
+    RETRY,
+    HANDLE
 };

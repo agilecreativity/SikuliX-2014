@@ -21,7 +21,7 @@ public class SikuliException extends Exception {
         String ret = _name + ": " + getMessage() + "\n";
         for (StackTraceElement elm : getStackTrace()) {
             ret += "  Line " + elm.getLineNumber()
-                    + ", in file " + elm.getFileName() + "\n";
+                + ", in file " + elm.getFileName() + "\n";
             return ret;
         }
         ret += "Line ?, in File ?";

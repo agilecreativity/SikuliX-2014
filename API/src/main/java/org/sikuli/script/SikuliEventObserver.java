@@ -13,7 +13,7 @@ import java.util.*;
  */
 @Deprecated
 public interface SikuliEventObserver extends EventListener {
-   public void targetAppeared(ObserveEvent e);
-   public void targetVanished(ObserveEvent e);
-   public void targetChanged(ObserveEvent e);
+    public void targetAppeared(ObserveEvent e);
+    public void targetVanished(ObserveEvent e);
+    public void targetChanged(ObserveEvent e);
 }

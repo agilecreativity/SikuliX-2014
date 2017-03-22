@@ -10,8 +10,8 @@ package org.sikuli.script;
  */
 public class Constants {
 
-	/**
-	 * use it for a very long time value
-	 */
-	public static double FOREVER = Double.POSITIVE_INFINITY;
+    /**
+     * use it for a very long time value
+     */
+    public static double FOREVER = Double.POSITIVE_INFINITY;
 }

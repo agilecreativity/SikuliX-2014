@@ -14,43 +14,43 @@ import java.io.IOException;
  */
 public interface IScreen {
 
-	public IRobot getRobot();
+    public IRobot getRobot();
 
-	public Rectangle getBounds();
+    public Rectangle getBounds();
 
-	public ScreenImage capture();
+    public ScreenImage capture();
 
-	public ScreenImage capture(int x, int y, int w, int h);
+    public ScreenImage capture(int x, int y, int w, int h);
 
-	public ScreenImage capture(Rectangle rect);
+    public ScreenImage capture(Rectangle rect);
 
-	public ScreenImage capture(Region reg);
+    public ScreenImage capture(Region reg);
 
-	public boolean isOtherScreen();
+    public boolean isOtherScreen();
 
-	public Rectangle getRect();
+    public Rectangle getRect();
 
-	public void showTarget(Location location);
+    public void showTarget(Location location);
 
-	public int getID();
+    public int getID();
 
-	public String getIDString();
+    public String getIDString();
 
-	public ScreenImage getLastScreenImageFromScreen();
+    public ScreenImage getLastScreenImageFromScreen();
 
-  public String getLastScreenImageFile(String path, String name) throws IOException;
+    public String getLastScreenImageFile(String path, String name) throws IOException;
 
-	public int getX();
+    public int getX();
 
-	public int getW();
+    public int getW();
 
-	public int getY();
+    public int getY();
 
-	public int getH();
+    public int getH();
 
-	public ScreenImage userCapture(String string);
+    public ScreenImage userCapture(String string);
 
-	public int getIdFromPoint(int srcx, int srcy);
+    public int getIdFromPoint(int srcx, int srcy);
 
-	public String toStringShort();
+    public String toStringShort();
 }

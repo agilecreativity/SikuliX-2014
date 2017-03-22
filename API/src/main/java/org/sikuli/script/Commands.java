@@ -141,9 +141,9 @@ public class Commands {
     private static double getNumber(Object aObj) {
         return getNumber(aObj, 0.0);
     }
-//</editor-fold>
+    //</editor-fold>
 
-//<editor-fold defaultstate="collapsed" desc="use/use1">
+    //<editor-fold defaultstate="collapsed" desc="use/use1">
 
     /**
      * all following undotted function calls will use the given screen or region
@@ -203,9 +203,9 @@ public class Commands {
         }
         return scr;
     }
-//</editor-fold>
+    //</editor-fold>
 
-//<editor-fold defaultstate="collapsed" desc="wait/waitVanish/exists">
+    //<editor-fold defaultstate="collapsed" desc="wait/waitVanish/exists">
 
     /**
      * wait for the given visual to appear within the given wait time<br>
@@ -293,7 +293,7 @@ public class Commands {
         }
         if (!argsOK) {
             throw new UnsupportedOperationException(
-                    "Commands.wait: parameters: String/Pattern:image, float:timeout, int:score");
+                                                    "Commands.wait: parameters: String/Pattern:image, float:timeout, int:score");
         }
         return realArgs;
     }
@@ -347,9 +347,9 @@ public class Commands {
         }
         return match;
     }
-//</editor-fold>
+    //</editor-fold>
 
-//<editor-fold defaultstate="collapsed" desc="hover/click/doubleClick/rightClick">
+    //<editor-fold defaultstate="collapsed" desc="hover/click/doubleClick/rightClick">
 
     /**
      * move the mouse to the given location with a given offset<br>
@@ -448,9 +448,9 @@ public class Commands {
         Mouse.click(null, Button.RIGHT, 0, false, null);
         return Mouse.at();
     }
-//</editor-fold>
+    //</editor-fold>
 
-//<editor-fold defaultstate="collapsed" desc="type/write/paste">
+    //<editor-fold defaultstate="collapsed" desc="type/write/paste">
 
     /**
      * just doing a currentRegion.paste(text) (see paste())
@@ -485,9 +485,9 @@ public class Commands {
         realArgs[0] = args[0];
         return realArgs;
     }
-//</editor-fold>
+    //</editor-fold>
 
-//<editor-fold defaultstate="collapsed" desc="JSON support">
+    //<editor-fold defaultstate="collapsed" desc="JSON support">
 
     /**
      * check wether the given object is in JSON format as ["ID", ...]
@@ -598,5 +598,5 @@ public class Commands {
             return 0;
         }
     }
-//</editor-fold>
+    //</editor-fold>
 }
